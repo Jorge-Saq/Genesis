@@ -15,6 +15,12 @@ Genesis exists to:
 - **Authentication:** Google OAuth (BC email only)
 - **Hosting:** Vercel (frontend), Render/Railway (backend)
 
+## 📂 Project Structure
+-/client # Frontend code (React)
+-/server # Backend API (Node/Express)
+-/uploads # (Optional) File uploads
+-.env.example # Template for environment variables
+
 ## 📬 Submissions
 Only authenticated Boston College students (`@bc.edu`) may submit. Submissions may be anonymous but still allow secure follow-up through encrypted emails.
 
