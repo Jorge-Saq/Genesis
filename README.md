@@ -27,5 +27,5 @@ Only authenticated Boston College students (`@bc.edu`) may submit. Submissions m
 ## 🛠️ Setup Instructions
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/genesis-magazine.git
-cd genesis-magazine
+git clone https://github.com/YOUR_USERNAME/genesis.git
+cd genesis
