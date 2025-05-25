@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-//Import React hooks and the Navbar component
+// Import React dependencies and custom components
 import Navbar from './components/Navbar';
-import { useEffect, useState } from 'react';
+import FeaturedSlider from './components/FeaturedSlider';
 
+// Root App component
 function App() {
   return (
-    // Set the background color and minimum screen height
+    // Outer container with warm beige background and full height
     <div className="bg-[#fcd8b6] min-h-screen">
-      {/* Fixed Navbar */}
+      
+      {/* Sticky, animated top navigation bar */}
       <Navbar />
 
-      {/* Page Content: Spaced down so it doesn't hide under the navbar */}
+      {/* Top landing section: title and scroll padding */}
       <div className="pt-24 text-center text-[#450b00]">
-        <h1 className="text-4xl font-serif">Welcome to Genesis</h1>
-        <div className="h-[200vh]"></div> {/* Filler to allow scrolling */}
+        <h1 className="text-7xl md:text-9xl font-heading tracking-tight uppercase text-[#450b00]">
+          WELCOME TO GENESIS
+        </h1>
+
+
+
+        {/* Temporary space to enable scrolling and fade effect for navbar */}
+        <div className="h-[10vh]"></div>
       </div>
+
+      {/* Auto-scrolling featured slider component */}
+      <FeaturedSlider />
+
+      {/* Future: Add action buttons or mission statement here */}
+
     </div>
   );
 }
 
 export default App;
+// Note: The above code is a simplified version of the original.

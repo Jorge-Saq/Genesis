@@ -5,8 +5,11 @@ module.exports = {
   ],
     
   theme: {
-    extend: {},
+  extend: {
+    fontFamily: {
+      heading: ['"Playfair Display"', 'serif'],
+      body: ['"Libre Baskerville"', 'serif']
+    },
   },
-  plugins: [],
+},
 }
-
