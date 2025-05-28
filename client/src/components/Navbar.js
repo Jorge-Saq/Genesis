@@ -1,6 +1,7 @@
 // Import necessary hooks and framer-motion for animations
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     // Controls navbar visibility
@@ -41,7 +42,15 @@ const Navbar = () => {
             />
         <ul className="flex space-x-6 font-body text-lg">
             <li className="hover:text-[#fb8239] cursor-pointer">About Us</li>
-            <li className="hover:text-[#fb8239] cursor-pointer">Submit</li>
+            <li>
+              <Link
+                to="submit"
+                className="relative px-4 py-2 font-body text-lg text-white overflow-hidden group"
+              >
+                <span className="absolute inset-0 w-full h-full bg-[#fb8239] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out z-0"></span>
+                <span className="relative z-10">Submit</span>
+              </Link>
+            </li>
             <li className="hover:text-[#fb8239] cursor-pointer">Contact</li>
         </ul>
 
